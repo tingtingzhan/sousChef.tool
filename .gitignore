@@ -1,3 +1,7 @@
+.DS_Store
+CRAN-SUBMISSION
+*.Rproj
+
 # History files
 .Rhistory
 .Rapp.history
@@ -38,7 +42,6 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
-.env
 
 # pkgdown site
 docs/
@@ -48,8 +51,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
-
-# compiled code 
-src/*.o
-src/*.so
-src/*.dll
+inst/doc
+.positai
