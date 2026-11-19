@@ -4,7 +4,6 @@
 
 # stopifnot(identical(' ', '\u0020'))
 
-setOldClass(Classes = c('cli_ansi_string', 'ansi_string', 'character'))
 
 
 
@@ -85,7 +84,15 @@ tool <- \(...) {
 }
 
 
-
+#' @importFrom sousChef.utils fmtURL
+add_tool_url <- \(x, name, brand, ...) {
+  v <- x[[name]]
+  if (!length(v)) return(x)
+  x$name <- v |>
+    fmtURL(text = paste(brand, x[['name']]), ...)
+  x[[name]] <- NULL
+  return(x)
+}
 
 
 
