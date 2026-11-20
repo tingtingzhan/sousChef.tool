@@ -4,7 +4,8 @@
 #' @exportS3Method generics::prune
 prune.tool <- \(tree, ...) {
   x <- tree; rm(tree)
-  tool(
+  new(
+    Class = 'tool',
     name = x@name, name2 = x@name2, 
     alias = x@alias,
     gram = x@gram,
