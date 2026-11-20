@@ -9,6 +9,7 @@ Language: en-US
 Encoding: UTF-8
 License: GPL-2
 Depends: R (>= 4.6)
-Imports: methods, cli (== 3.6.6), consec, sousChef.utils
+Imports: methods, cli (== 3.6.6), consec,  sousChef.utils
+Suggests: generics
 Config/roxygen2/version: 8.1.1
 Config/roxygen2/markdown: TRUE
